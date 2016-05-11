@@ -8,33 +8,21 @@ namespace csharp_samples.Interfaces.understanding
 {
     public class Hospital
     {
-        public Dog SickDog { get; set; }
-        public Cat SickCat { get; set; }
+        public IInjectable SickPatient { get; set; }
 
         public void HealSickPatient()
         {
-            if (SickCat != null)
+            if (SickPatient != null)
             {
-                MakeInjectionForCat(SickCat);
+                MakeInjection(SickPatient);
             }
 
-            if (SickDog != null)
-            {
-                MakeInjectionForDog(SickDog);
-            }
-
-            SickCat = null;
-            SickDog = null;
+            SickPatient = null;
         }
 
-        private void MakeInjectionForDog(Dog dog)
+        private void MakeInjection(IInjectable patient)
         {
-            dog.TakeInjection();
-        }
-
-        private void MakeInjectionForCat(Cat cat)
-        {
-            cat.TakeInjection();
+            patient.TakeInjection();
         }
 
         private void GivePill()

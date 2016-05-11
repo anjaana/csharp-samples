@@ -11,13 +11,13 @@ namespace csharp_samples.Interfaces.understanding
         public static void Do()
         {
             var hospital = new Hospital();
-            var mySickDog = new Dog();
+            IInjectable mySickDog = new Dog();
 
-            hospital.SickDog = mySickDog;
+            hospital.SickPatient = mySickDog;
             hospital.HealSickPatient();
 
-            var mySickCat = new Cat();
-            hospital.SickCat = mySickCat;
+            IInjectable mySickCat = new Cat();
+            hospital.SickPatient = mySickCat;
 
             hospital.HealSickPatient();
         }

@@ -48,6 +48,7 @@
     <Compile Include="Interfaces\understanding\Cat.cs" />
     <Compile Include="Interfaces\understanding\Dog.cs" />
     <Compile Include="Interfaces\understanding\Hospital.cs" />
+    <Compile Include="Interfaces\understanding\IInjectable.cs" />
     <Compile Include="Interfaces\understanding\TryToUnderstandInterfaces.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
