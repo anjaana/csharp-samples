@@ -1,4 +1,5 @@
-﻿using System;
+﻿using csharp_samples.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ namespace csharp_samples
     {
         static void Main(string[] args)
         {
+            TryInterfaces.Do();
         }
     }
 }

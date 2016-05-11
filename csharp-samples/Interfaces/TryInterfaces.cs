@@ -10,7 +10,11 @@ namespace csharp_samples.Interfaces
     {
         public static void Do()
         {
+            // Declare an interface instance.
+            ISampleInterface obj = new ImplementationClass();
 
+            // Call the member.
+            obj.SampleMethod();
         }
     }
 }
